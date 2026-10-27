@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sela Barat — Perjalanan Kalimantan Barat</title>
+  <meta name="description" content="Sela Barat merancang perjalanan ke pesisir, pulau, dan cerita Kalimantan Barat. Destinasi pesisir, pengalaman laut, dan inspirasi trip yang disusun bersama." />
+  <meta name="theme-color" content="#113e3a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar.html -->
+  <header class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="brand" onclick="scrollToTop()">
+        <span class="brand-word serif">sela barat.</span>
+        <span class="brand-desc">PERJALANAN KALIMANTAN BARAT</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#destinasi">Katalog</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#inspirasi">Inspirasi trip</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#tentang">Tentang kami</a>
+        <a href="#kontak" class="nav-cta">Mari bercerita <img src="assets/arrow-up-right-light.svg" alt=""></a>
+      </nav>
+
+      <button class="nav-burger" id="mobile-menu-btn" aria-label="Buka menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#destinasi" onclick="closeMobileMenu()">Katalog</a>
+      <a href="#pengalaman" onclick="closeMobileMenu()">Pengalaman</a>
+      <a href="#inspirasi" onclick="closeMobileMenu()">Inspirasi trip</a>
+      <a href="#galeri" onclick="closeMobileMenu()">Galeri</a>
+      <a href="#tentang" onclick="closeMobileMenu()">Tentang kami</a>
+      <a href="#kontak" onclick="closeMobileMenu()">Mari bercerita</a>
+    </div>
+  </header>
+
+  <!-- HeroSection.html -->
+  <section class="hero">
+    <video class="hero-bg is-active" id="hero-video" muted playsinline autoplay
+           poster="assets/island-coastline.png" src="assets/hero/hero-1.mp4" aria-hidden="true"></video>
+    <video class="hero-bg" muted playsinline preload="none" aria-hidden="true"></video>
+    <div class="hero-shade"></div>
+    <div class="hero-navshade"></div>
+
+    <div class="hero-content">
+      <p class="label label-mist">KALIMANTAN BARAT, DARI DEKAT</p>
+      <h1 class="serif h-xl">Ada rindu<br>bernama laut.</h1>
+      <p class="hero-desc">Pulau yang hijau, air yang berkilau, dan waktu yang terasa lebih pelan. Temukan sisi Kalimantan Barat yang ingin Anda datangi kembali.</p>
+      <a href="#kontak" class="btn-solid">Konsultasikan perjalanan <img src="assets/arrow-up-right-dark.svg" alt=""></a>
+    </div>
+
+    <div class="hero-foot">
+      <div class="explore">
+        <img src="assets/arrow-down.svg" alt="">
+        <span>Pelankan langkah. Mulai menjelajah.</span>
+      </div>
+      <p class="hero-loc">PESISIR &amp; KEPULAUAN KALIMANTAN BARAT</p>
+    </div>
+  </section>
+
+  <!-- Features.html -->
+  <section class="invite">
+    <div class="invite-margin">
+      <p class="label label-dark">SEBUAH AJAKAN UNTUK MENJEDA</p>
+      <p class="margin-note">PESISIR &bull; PULAU &bull; CERITA LOKAL</p>
+    </div>
+    <div class="invite-copy">
+      <h2 class="serif h-lg">Tak perlu jauh untuk merasa di dunia yang berbeda.</h2>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <p class="body">Di pesisir barat Kalimantan, ada pantai yang panjang, pulau-pulau kecil, dan senja yang tak perlu terburu-buru. Sela Barat adalah teman merancang perjalanan Anda, berbasis di Kalimantan Barat.</p>
+        <a href="#destinasi" class="link-inline">Lihat katalog perjalanan <img src="assets/arrow-up-right-dark.svg" alt=""></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="destinasi" class="sec sec-cat">
+    <div class="sec-head">
+      <p class="label label-dark">KATALOG PERJALANAN</p>
+      <h2 class="serif h-lg">Pilih titik berangkat Anda.</h2>
+      <p class="body">Tiga rancangan awal. Harga adalah estimasi per orang dan bukan penawaran final; rinciannya dibahas sebelum Anda memesan.</p>
+    </div>
+
+    <!-- GANTI: angka harga di bawah masih contoh. Perbarui sebelum publikasi. -->
+    <div class="cat-cards">
+      <article class="cat-card">
+        <img src="assets/dest-lemukutan.png" alt="Pulau Lemukutan" class="cat-img" width="1024" height="1024" loading="lazy">
+        <div class="cat-body">
+          <p class="label cat-loc">BENGKAYANG &middot; PULAU &amp; SNORKELING</p>
+          <h3 class="serif">Sejenak di Lemukutan</h3>
+          <p class="cat-dur">2 hari / 1 malam</p>
+          <details class="cat-more">
+            <summary>Itinerary &amp; fasilitas</summary>
+            <ol>
+              <li><strong>Hari 1</strong> — Kumpul di Pontianak pagi, darat ke Bengkayang, lalu perahu ke pulau. Makan siang, jelajah tepi pulau, snorkeling sore.</li>
+              <li><strong>Hari 2</strong> — Pagi di pantai, sarapan, snorkeling kedua bila kondisi laut mengizinkan. Perahu kembali, lalu darat ke Pontianak.</li>
+            </ol>
+            <div class="cat-fac">
+              <p><strong>Termasuk</strong>Transport darat, perahu, penginapan 1 malam, makan sesuai jadwal, pemandu lokal, alat snorkeling dasar.</p>
+              <p><strong>Belum termasuk</strong>Transport ke Pontianak, pengeluaran pribadi, asuransi perjalanan.</p>
+            </div>
+          </details>
+          <div class="cat-foot">
+            <div>
+              <span class="cat-from">Mulai dari</span>
+              <span class="cat-price">Rp 1.250.000</span>
+            </div>
+            <a href="#kontak" class="link-inline">Pesan <img src="assets/arrow-up-right-dark.svg" alt=""></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cat-card">
+        <img src="assets/dest-randayan.png" alt="Pulau Randayan" class="cat-img" width="1376" height="768" loading="lazy">
+        <div class="cat-body">
+          <p class="label cat-loc">BENGKAYANG &middot; PANTAI &amp; WAKTU LUANG</p>
+          <h3 class="serif">Jeda di Randayan</h3>
+          <p class="cat-dur">Disesuaikan</p>
+          <details class="cat-more">
+            <summary>Itinerary &amp; fasilitas</summary>
+            <ol>
+              <li><strong>Hari 1</strong> — Kumpul di Pontianak, darat ke pesisir Bengkayang, lalu penyeberangan ke Randayan. Waktu luang sepanjang hari, menutup dengan senja.</li>
+            </ol>
+            <div class="cat-fac">
+              <p><strong>Termasuk</strong>Transport darat, perahu penyeberangan, pemandu lokal.</p>
+              <p><strong>Belum termasuk</strong>Transport ke Pontianak, penginapan, makan, pengeluaran pribadi, asuransi perjalanan.</p>
+            </div>
+            <p class="cat-caveat">Durasi dan titik singgah mengikuti jumlah peserta serta kesepakatan saat konsultasi.</p>
+          </details>
+          <div class="cat-foot">
+            <div>
+              <span class="cat-from">Mulai dari</span>
+              <span class="cat-price">Rp 450.000</span>
+            </div>
+            <a href="#kontak" class="link-inline">Pesan <img src="assets/arrow-up-right-dark.svg" alt=""></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cat-card">
+        <img src="assets/dest-temajuk.png" alt="Pantai Temajuk" class="cat-img" width="1376" height="768" loading="lazy">
+        <div class="cat-body">
+          <p class="label cat-loc">SAMBAS &middot; PESISIR &amp; SENJA</p>
+          <h3 class="serif">Menyusuri Temajuk</h3>
+          <p class="cat-dur">3 hari / 2 malam</p>
+          <details class="cat-more">
+            <summary>Itinerary &amp; fasilitas</summary>
+            <ol>
+              <li><strong>Hari 1</strong> — Kumpul di Pontianak, perjalanan darat ke Sambas. Singgah untuk makan, lalu lanjut ke kawasan Temajuk.</li>
+              <li><strong>Hari 2</strong> — Jalan di pantai, lanskap pesisir dan hutan sekitarnya. Siang bebas, sore menunggu matahari terbenam.</li>
+              <li><strong>Hari 3</strong> — Pagi bebas, sarapan, perjalanan darat kembali ke Pontianak.</li>
+            </ol>
+            <div class="cat-fac">
+              <p><strong>Termasuk</strong>Transport darat, penginapan 2 malam, makan sesuai jadwal, pemandu lokal.</p>
+              <p><strong>Belum termasuk</strong>Transport ke Pontianak, pengeluaran pribadi, asuransi perjalanan, aktivitas tambahan.</p>
+            </div>
+            <p class="cat-caveat">Waktu tempuh dan kondisi jalan perlu dikonfirmasi mendekati tanggal keberangkatan.</p>
+          </details>
+          <div class="cat-foot">
+            <div>
+              <span class="cat-from">Mulai dari</span>
+              <span class="cat-price">Rp 2.100.000</span>
+            </div>
+            <a href="#kontak" class="link-inline">Pesan <img src="assets/arrow-up-right-dark.svg" alt=""></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p class="note">Akses pulau memerlukan penyeberangan. Rute dan kegiatan menyesuaikan cuaca, kondisi laut, serta ketersediaan setempat.</p>
+  </section>
+
+  <section id="pengalaman" class="exp">
+    <div class="exp-visual">
+      <img src="assets/snorkeling.png" alt="Snorkeling di perairan pulau">
+      <p class="exp-cap">LEBIH DEKAT DENGAN LAUT. LEBIH PEDULI PADANYA.</p>
+    </div>
+
+    <div class="exp-text">
+      <p class="label label-mist">BUKAN SEKADAR SINGGAH</p>
+      <h2 class="serif h-lg">Yang dibawa pulang bukan cuma foto.</h2>
+
+      <div class="exp-list">
+        <article class="exp-item">
+          <div class="exp-rule"></div>
+          <div class="exp-row">
+            <span class="exp-num">01</span>
+            <div class="exp-body">
+              <h3>Mengintip dunia di bawah biru</h3>
+              <p>Snorkeling di sekitar Lemukutan, saat kondisi memungkinkan. Bergerak pelan, amati ikan, dan biarkan karang tetap tumbuh tanpa disentuh.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-item">
+          <div class="exp-rule"></div>
+          <div class="exp-row">
+            <span class="exp-num">02</span>
+            <div class="exp-body">
+              <h3>Tak melakukan apa-apa, sepenuhnya</h3>
+              <p>Duduk di bawah teduh pohon, baca beberapa halaman, atau dengarkan ombak di Randayan. Waktu luang juga layak masuk rencana perjalanan.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-item">
+          <div class="exp-rule"></div>
+          <div class="exp-row">
+            <span class="exp-num">03</span>
+            <div class="exp-body">
+              <h3>Menunggu senja sampai tuntas</h3>
+              <p>Di Temajuk, biarkan sore berakhir tanpa buru-buru. Langit, angin, dan garis pantai menjadi kenangan sederhana yang tinggal lebih lama.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="note-mist">Aktivitas air mengikuti kondisi laut dan arahan pendamping. Gunakan pelampung sesuai kebutuhan.</p>
+    </div>
+  </section>
+
+  <section id="inspirasi" class="sec" style="display:flex;flex-direction:column;gap:48px">
+    <div class="sec-head">
+      <p class="label label-dark">BERANGKAT DARI SEBUAH IDE</p>
+      <h2 class="serif h-lg">Perjalanan Anda, bukan milik semua orang.</h2>
+      <p class="body">Tiga inspirasi awal, bukan paket yang mengikat. Ceritakan keinginan Anda; rute dan ritmenya kita susun bersama.</p>
+    </div>
+
+    <div class="trips">
+      <article class="trip">
+        <img src="assets/trip-lemukutan.png" alt="Pulau Lemukutan" class="trip-img">
+        <p class="label label-dark">PULAU &amp; SNORKELING</p>
+        <div class="trip-head">
+          <h3>Sejenak di Lemukutan</h3>
+          <p class="trip-dur">Ide durasi: 2 hari / 1 malam</p>
+        </div>
+        <div class="trip-rule"></div>
+        <div class="trip-facts">
+          <p>Darat ke pesisir Bengkayang, dilanjutkan dengan perahu menuju pulau.</p>
+          <p>Jelajah tepi pulau, snorkeling sesuai kondisi, dan waktu santai.</p>
+          <p class="confirm">Perlu dikonfirmasi: Jadwal perahu, penginapan, serta kebutuhan alat snorkeling.</p>
+        </div>
+        <a href="#kontak" class="link-inline">Minta penawaran <img src="assets/arrow-up-right-dark.svg" alt=""></a>
+      </article>
+
+      <article class="trip">
+        <img src="assets/trip-randayan.png" alt="Pulau Randayan" class="trip-img">
+        <p class="label label-dark">PANTAI &amp; WAKTU LUANG</p>
+        <div class="trip-head">
+          <h3>Jeda di Randayan</h3>
+          <p class="trip-dur">Durasi disesuaikan</p>
+        </div>
+        <div class="trip-rule"></div>
+        <div class="trip-facts">
+          <p>Perjalanan darat ke pesisir Bengkayang, lalu penyeberangan ke Randayan.</p>
+          <p>Menikmati pantai, bersantai di bawah pepohonan, dan berburu cahaya sore.</p>
+          <p class="confirm">Perlu dikonfirmasi: Akses perahu, izin kunjungan, serta pilihan singgah atau menginap.</p>
+        </div>
+        <a href="#kontak" class="link-inline">Minta penawaran <img src="assets/arrow-up-right-dark.svg" alt=""></a>
+      </article>
+
+      <article class="trip">
+        <img src="assets/trip-temajuk.png" alt="Pantai Temajuk" class="trip-img">
+        <p class="label label-dark">PESISIR &amp; SENJA</p>
+        <div class="trip-head">
+          <h3>Menyusuri Temajuk</h3>
+          <p class="trip-dur">Ide durasi: 3 hari / 2 malam</p>
+        </div>
+        <div class="trip-rule"></div>
+        <div class="trip-facts">
+          <p>Perjalanan darat melalui Sambas menuju kawasan pesisir Temajuk.</p>
+          <p>Jalan di pantai, menikmati lanskap pesisir, dan menunggu matahari terbenam.</p>
+          <p class="confirm">Perlu dikonfirmasi: Waktu tempuh, kondisi jalan, penginapan, serta titik penjemputan.</p>
+        </div>
+        <a href="#kontak" class="link-inline">Minta penawaran <img src="assets/arrow-up-right-dark.svg" alt=""></a>
+      </article>
+    </div>
+
+    <div class="trip-note">
+      <p class="note">Durasi di atas adalah inspirasi. Penawaran mengikuti tanggal, jumlah peserta, transportasi, akomodasi, dan aktivitas pilihan. Rincian biaya serta yang termasuk dan tidak termasuk dibahas sebelum Anda menyetujui perjalanan.</p>
+    </div>
+  </section>
+
+  <section id="video" class="sec" style="padding-top:0">
+    <div class="video-grid">
+      <a class="video-frame" href="https://www.youtube.com/watch?v=M2l1iVrda0c" target="_blank" rel="noopener" aria-label="Tonton video: Desa Wisata Temajuk, Sambas, di YouTube">
+        <img src="assets/video-poster.jpg" alt="Desa Wisata Temajuk, Kabupaten Sambas, Kalimantan Barat">
+        <span class="video-play" aria-hidden="true"><i class="fa-solid fa-circle-play"></i></span>
+      </a>
+      <div class="video-copy">
+        <p class="label label-dark">SEBELUM BERANGKAT</p>
+        <h2 class="serif h-lg">Lihat dulu suasananya.</h2>
+        <p class="body">Gambaran singkat pesisir, pulau, dan ritme perjalanan yang biasa kami susun. Bila sudah terasa cocok, ceritakan rencana Anda.</p>
+        <div><a href="#kontak" class="btn-solid">Konsultasikan perjalanan <img src="assets/arrow-up-right-dark.svg" alt=""></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GANTI: foto di bawah memakai aset ilustratif yang sudah ada. Ganti dengan
+       dokumentasi perjalanan asli sebelum publikasi. -->
+  <section id="galeri" class="sec" style="padding-top:0;display:flex;flex-direction:column;gap:32px">
+    <div class="sec-head">
+      <p class="label label-dark">DOKUMENTASI</p>
+      <h2 class="serif h-lg">Sepotong pemandangan dari perjalanan.</h2>
+    </div>
+    <div class="gallery">
+      <img src="assets/dest-temajuk.png" alt="Pantai Temajuk" class="gal-img" width="1376" height="768" loading="lazy">
+      <img src="assets/dest-randayan.png" alt="Pulau Randayan" class="gal-img" width="1376" height="768" loading="lazy">
+      <img src="assets/dest-lemukutan.png" alt="Pulau Lemukutan" class="gal-img" width="1024" height="1024" loading="lazy">
+      <img src="assets/island-coastline.png" alt="Garis pantai kepulauan Kalimantan Barat" class="gal-img" width="1376" height="768" loading="lazy">
+      <img src="assets/snorkeling.png" alt="Snorkeling di perairan pulau" class="gal-img" width="928" height="1152" loading="lazy">
+      <img src="assets/evening-shore.png" alt="Tepi pantai menjelang senja" class="gal-img" width="1584" height="672" loading="lazy">
+    </div>
+  </section>
+
+  <section id="tentang" class="plan">
+    <div class="plan-intro">
+      <p class="label label-dark">BERBASIS DI KALIMANTAN BARAT</p>
+      <h2 class="serif h-lg">Anda membawa rasa ingin pergi. Kita mulai dari sana.</h2>
+      <p class="body">Keindahan layak dinikmati dengan tenang. Konsultasi membantu menyatukan keinginan Anda dengan kenyataan di perjalanan.</p>
+      <div class="plan-meet">
+        <p class="meet-label">TITIK KUMPUL</p>
+        <p class="meet-detail">Kantor Sela Barat, Pontianak (alamat menyusul) — atau titik lain sesuai kesepakatan saat konsultasi.</p>
+      </div>
+      <a href="#kontak" class="link-inline">Mari susun rencananya <img src="assets/arrow-up-right-dark.svg" alt=""></a>
+    </div>
+
+    <div class="plan-list">
+      <article class="benefit">
+        <div class="trip-rule"></div>
+        <div class="benefit-row">
+          <span class="benefit-num">01</span>
+          <div class="benefit-body">
+            <h3>Rute yang masuk akal</h3>
+            <p>Bicarakan titik berangkat, sambungan darat dan perahu, serta waktu istirahat. Lebih sedikit bolak-balik, lebih banyak waktu menikmati tempat.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="benefit">
+        <div class="trip-rule"></div>
+        <div class="benefit-row">
+          <span class="benefit-num">02</span>
+          <div class="benefit-body">
+            <h3>Ritme yang terasa milik Anda</h3>
+            <p>Liburan berdua, bersama keluarga, atau teman punya kebutuhan berbeda. Sesuaikan aktivitas, kenyamanan menginap, dan ruang untuk beristirahat.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="benefit">
+        <div class="trip-rule"></div>
+        <div class="benefit-row">
+          <span class="benefit-num">03</span>
+          <div class="benefit-body">
+            <h3>Rencana yang menghormati alam</h3>
+            <p>Cuaca dan kondisi laut jadi pertimbangan, bukan pengganggu. Bahas alternatif rute dan kebiasaan berwisata yang menjaga pantai tetap bersih.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" style="display:flex;flex-direction:column;gap:40px">
+    <div class="sec-head">
+      <p class="label label-dark">MASIH ADA CERITA DI DARAT</p>
+      <h2 class="serif h-lg">Kalimantan Barat tak berhenti di pantai.</h2>
+      <p class="body">Jika waktu Anda lebih panjang, buka bab lain: perairan pedalaman dan kehidupan di kota khatulistiwa.</p>
+    </div>
+
+    <div class="inland">
+      <article class="inland-lake inland-item">
+        <img src="assets/danau-sentarum.png" alt="Danau Sentarum" class="inland-img-lake">
+        <p class="label label-dark">KAPUAS HULU &middot; DANAU &amp; LAHAN BASAH</p>
+        <h3 class="serif h-2xs">Danau Sentarum</h3>
+        <p>Bukan laut, melainkan hamparan danau musiman dan hutan rawa di pedalaman. Jelajah perairannya membutuhkan rencana tersendiri; akses dan lanskap mengikuti musim serta tinggi air.</p>
+      </article>
+
+      <article class="inland-city inland-item">
+        <img src="assets/pontianak.png" alt="Pontianak" class="inland-img-city">
+        <p class="label label-dark">KOTA KHATULISTIWA &middot; SUNGAI &amp; CERITA</p>
+        <h3 class="serif h-2xs">Pontianak</h3>
+        <p>Berkenalan dengan tepian Sungai Kapuas, singgah untuk kopi, dan cicipi ragam kuliner kota. Sebuah pembuka atau penutup perjalanan untuk mengenal keseharian Kalimantan Barat.</p>
+      </article>
+    </div>
+
+    <p class="note">Danau Sentarum berada di Kapuas Hulu, jauh dari rute pesisir. Bukan tambahan singkat dalam trip pulau; konsultasikan waktu dan akses secara terpisah.</p>
+  </section>
+
+  <section id="ulasan" class="sec sec-review">
+    <div class="sec-head">
+      <p class="label label-dark">MEREKA YANG SUDAH BERANGKAT</p>
+      <h2 class="serif h-lg">Cerita yang dibawa pulang.</h2>
+      <p class="body">Ulasan ditulis peserta setelah perjalanan selesai. Kami tidak menyunting isinya.</p>
+    </div>
+
+    <!-- GANTI: tiga ulasan di bawah masih contoh struktur. Ganti dengan kutipan asli
+         dari peserta, lengkap dengan nama dan tanggal perjalanan, sebelum publikasi.
+         Jangan tayangkan ulasan yang belum benar-benar terjadi. -->
+    <div class="reviews">
+      <figure class="review">
+        <blockquote>Ulasan peserta trip Lemukutan. Ganti dengan kutipan asli, dua sampai tiga kalimat.</blockquote>
+        <figcaption>
+          <span class="review-name">Nama peserta</span>
+          <span class="review-meta">Sejenak di Lemukutan &middot; Agustus 2026</span>
+        </figcaption>
+      </figure>
+
+      <figure class="review">
+        <blockquote>Ulasan peserta trip Randayan. Ganti dengan kutipan asli, dua sampai tiga kalimat.</blockquote>
+        <figcaption>
+          <span class="review-name">Nama peserta</span>
+          <span class="review-meta">Jeda di Randayan &middot; Juli 2026</span>
+        </figcaption>
+      </figure>
+
+      <figure class="review">
+        <blockquote>Ulasan peserta trip Temajuk. Ganti dengan kutipan asli, dua sampai tiga kalimat.</blockquote>
+        <figcaption>
+          <span class="review-name">Nama peserta</span>
+          <span class="review-meta">Menyusuri Temajuk &middot; Juni 2026</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="faq-intro">
+      <p class="label label-dark">SEBELUM MENGEMAS TAS</p>
+      <h2 class="serif h-lg">Mungkin ini yang ingin Anda tanyakan.</h2>
+      <p class="body">Sedikit kejelasan, supaya Anda bisa mulai membayangkan perjalanannya.</p>
+    </div>
+
+    <div class="faq-list">
+      <article class="qa">
+        <div class="qa-rule"></div>
+        <h3>Kapan waktu yang tepat untuk ke pulau?</h3>
+        <p>Kondisi laut dan cuaca bisa berubah. Bahas tanggal rencana Anda, lalu konfirmasi kondisi serta jadwal penyeberangan mendekati keberangkatan.</p>
+      </article>
+
+      <article class="qa">
+        <div class="qa-rule"></div>
+        <h3>Bisa ikut jika belum pernah snorkeling?</h3>
+        <p>Sampaikan kemampuan berenang Anda saat konsultasi. Kesesuaian lokasi, pelampung, pendampingan, dan alternatif aktivitas perlu dibahas terlebih dahulu.</p>
+      </article>
+
+      <article class="qa">
+        <div class="qa-rule"></div>
+        <h3>Apa saja yang termasuk dalam penawaran?</h3>
+        <p>Tergantung rancangan trip. Minta rincian transportasi, perahu, penginapan, makan, peralatan, biaya tambahan, serta ketentuan perubahan atau pembatalan.</p>
+      </article>
+
+      <article class="qa">
+        <div class="qa-rule"></div>
+        <h3>Apa yang perlu disiapkan untuk konsultasi?</h3>
+        <p>Cukup tanggal atau perkiraan waktu, jumlah peserta, titik berangkat, kisaran anggaran, dan gaya liburan yang Anda sukai. Belum punya tujuan? Kita mulai dari sana.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer.html -->
+  <section id="kontak" class="consult">
+    <img src="assets/evening-shore.png" alt="" class="consult-bg">
+    <div class="consult-shade"></div>
+
+    <p class="label label-mist">LAUTNYA DI SINI. CERITANYA MENANTI.</p>
+    <h2 class="consult-headline">Ke mana rindu<br>akan membawa Anda?</h2>
+    <p class="consult-desc">Ceritakan perjalanan yang Anda bayangkan. Mulai dari tanggal, teman perjalanan, atau sekadar keinginan untuk melihat laut.</p>
+    <a href="https://wa.me/628123456789?text=Halo%20Sela%20Barat%2C%20saya%20ingin%20konsultasi%20rencana%20perjalanan%20ke%20Kalimantan%20Barat." target="_blank" rel="noopener" class="btn-solid">
+      <img src="assets/message-circle.svg" alt=""> Konsultasikan perjalanan
+    </a>
+    <p class="consult-note">Mulai percakapan via WhatsApp &middot; Rencana disusun bersama</p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <a href="#" class="brand" onclick="scrollToTop()">
+          <span class="brand-word serif">sela barat.</span>
+          <span class="brand-desc">PERJALANAN KALIMANTAN BARAT</span>
+        </a>
+        <p class="footer-mission">Ruang untuk menjeda. Teman merancang perjalanan ke pesisir, pulau, dan cerita Kalimantan Barat.</p>
+      </div>
+
+      <div class="footer-group">
+        <p>JELAJAHI</p>
+        <a href="#destinasi">Katalog</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#inspirasi">Inspirasi trip</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#tentang">Tentang kami</a>
+      </div>
+
+      <div class="footer-group">
+        <p>MULAI CERITA</p>
+        <a href="https://wa.me/628123456789" target="_blank" rel="noopener">Konsultasi via WhatsApp</a>
+        <a href="#inspirasi">Inspirasi trip</a>
+        <a href="#ulasan">Ulasan</a>
+        <a href="#faq">Pertanyaan umum</a>
+      </div>
+    </div>
+
+    <div class="footer-rule"></div>
+
+    <div class="footer-notes">
+      <p>&copy; 2026 Sela Barat. Berbasis di Kalimantan Barat.</p>
+      <p>Visual destinasi bersifat ilustratif. Kondisi di lokasi dapat berbeda.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
